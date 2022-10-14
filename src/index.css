@@ -15,12 +15,6 @@ body{
 }
 
 
-
-
-
-
-
-
 .container{
     width: 50vw;
     height: auto;
@@ -30,15 +24,12 @@ body{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.5px);
     -webkit-backdrop-filter: blur(2.5px);
-
-
 }
 
 .header{
     background-color: rgb(211, 210, 210);
     color: rgb(145, 145, 145);
     padding: 50px;
-    
 }
 
 article{
@@ -46,7 +37,7 @@ article{
 }
 
 .formItem{
-    width: 20vw;
+    width: 40vw;
     height: 1.1rem;
     border: none;
     border-radius: 3px;
@@ -64,8 +55,8 @@ article{
     width: 20.5vw;
     height: 1.5rem;
     padding: 5px;
-
 }
+
 .btn:hover{
     cursor: pointer;
 }
@@ -125,6 +116,7 @@ ul {
     color: gainsboro;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 50vw;
     list-style: none;
     padding: 5px;
@@ -145,7 +137,31 @@ a{
     padding-bottom: 5px;
     text-decoration: none;
     text-align: center;
-    margin-top: 5px;
 
     
+}
+
+@media (max-width: 500px){
+
+    .container{
+        width: 70vw;
+    }
+
+    .header{
+       height: auto;
+       font-size: 12px
+    }
+    .btn{
+        width: 27vw;
+    }
+    ul{
+        width: 100%;
+        font-size: 12px;
+
+    }
+    .form-control{
+        width: 100%;
+        
+    }
+
 }

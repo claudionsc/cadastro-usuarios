@@ -10,8 +10,13 @@ function Form() {
     e.preventDefault();
 
     const nome = refNome.current.value;
+    if(refNome.current.value){
     dispatch(addUsuario(nome));
     refNome.current.value = "";
+
+    
+      
+    } return
   }
 
   return (
